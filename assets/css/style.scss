@@ -1,0 +1,213 @@
+---
+---
+
+@import "{{ site.theme }}";
+
+/* ─────────────────────────────────────────────
+   Keerthivaasan Ramamoorthy Sathyaseelan
+   Engineering Portfolio — Custom Styles
+   keerthivaasansathyaseelan@gmail.com
+   linkedin.com/in/keerthrs
+───────────────────────────────────────────── */
+
+/* ── COLOUR TOKENS ── */
+:root {
+  --gold:    #B8892A;
+  --gold-d:  #8F6A1A;
+  --gold-l:  #FBF4E6;
+  --teal:    #0A8A9F;
+  --ink:     #1A1713;
+  --ink-2:   #3D3830;
+  --ink-3:   #7A7268;
+  --surface: #FFFFFF;
+  --bg:      #F8F6F2;
+  --border:  #E2DDD8;
+}
+
+/* ── HEADER OVERRIDES ── */
+.page-header {
+  background-color: #1A1713 !important;
+  background-image: linear-gradient(145deg, #1A1713 0%, #2A2518 100%) !important;
+  padding: 3rem 2rem !important;
+}
+
+.project-name {
+  font-size: 1.75rem !important;
+  font-weight: 700 !important;
+  letter-spacing: -0.03em !important;
+}
+
+.project-tagline {
+  font-size: 1rem !important;
+  opacity: 0.7 !important;
+  margin-top: 0.5rem !important;
+}
+
+/* ── MAIN CONTENT ── */
+.main-content {
+  font-size: 1.05rem;
+  line-height: 1.75;
+  color: var(--ink-2);
+  max-width: 860px;
+}
+
+.main-content h1 {
+  color: var(--ink);
+  font-size: 2rem;
+  font-weight: 800;
+  letter-spacing: -0.04em;
+  border-bottom: 3px solid var(--gold);
+  padding-bottom: 0.5rem;
+  margin-bottom: 1.25rem;
+}
+
+.main-content h2 {
+  color: var(--ink);
+  font-size: 1.35rem;
+  font-weight: 700;
+  margin-top: 2.5rem;
+  margin-bottom: 0.75rem;
+  letter-spacing: -0.02em;
+}
+
+.main-content h3 {
+  color: var(--ink-2);
+  font-size: 1.1rem;
+  font-weight: 700;
+  margin-top: 1.75rem;
+  margin-bottom: 0.5rem;
+}
+
+.main-content p {
+  color: var(--ink-2);
+  margin-bottom: 1rem;
+}
+
+.main-content strong {
+  color: var(--ink);
+  font-weight: 600;
+}
+
+/* ── LINKS ── */
+.main-content a {
+  color: var(--gold-d);
+  text-decoration: none;
+  border-bottom: 1px solid var(--gold-l);
+  transition: color 0.2s, border-color 0.2s;
+}
+
+.main-content a:hover {
+  color: var(--teal);
+  border-bottom-color: var(--teal);
+}
+
+/* ── BLOCKQUOTE — outcome callouts ── */
+.main-content blockquote {
+  background: var(--gold-l);
+  border-left: 4px solid var(--gold);
+  border-radius: 0 8px 8px 0;
+  padding: 0.85rem 1.25rem;
+  margin: 1.5rem 0;
+  color: var(--gold-d);
+  font-weight: 600;
+  font-size: 1rem;
+}
+
+.main-content blockquote p {
+  color: var(--gold-d);
+  margin: 0;
+}
+
+/* ── TABLES ── */
+.main-content table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 1.5rem 0;
+  font-size: 0.95rem;
+}
+
+.main-content table th {
+  background: var(--ink);
+  color: #fff;
+  padding: 0.6rem 1rem;
+  text-align: left;
+  font-weight: 600;
+}
+
+.main-content table td {
+  padding: 0.55rem 1rem;
+  border-bottom: 1px solid var(--border);
+  color: var(--ink-2);
+  vertical-align: top;
+}
+
+.main-content table tr:nth-child(even) td {
+  background: var(--bg);
+}
+
+/* ── LISTS ── */
+.main-content ul li,
+.main-content ol li {
+  margin-bottom: 0.45rem;
+  color: var(--ink-2);
+}
+
+.main-content ul li strong {
+  color: var(--ink);
+}
+
+/* ── CODE / MONOSPACE ── */
+.main-content code {
+  background: var(--bg);
+  border: 1px solid var(--border);
+  border-radius: 4px;
+  padding: 0.1em 0.4em;
+  font-size: 0.88em;
+  color: var(--gold-d);
+}
+
+/* ── HORIZONTAL RULE ── */
+.main-content hr {
+  border: none;
+  border-top: 1px solid var(--border);
+  margin: 2.5rem 0;
+}
+
+/* ── WATERMARK FOOTER ── */
+.site-footer {
+  border-top: 1px solid var(--border);
+  padding: 1.5rem 2rem;
+  font-size: 0.85rem;
+  color: var(--ink-3);
+  background: var(--bg);
+}
+
+.site-footer::before {
+  content: "Keerthivaasan Ramamoorthy Sathyaseelan  ·  keerthivaasansathyaseelan@gmail.com  ·  linkedin.com/in/keerthrs  ·  Madison, WI";
+  display: block;
+  margin-bottom: 0.5rem;
+  color: var(--ink-3);
+  font-size: 0.82rem;
+}
+
+/* ── BUTTON OVERRIDES ── */
+.btn {
+  background-color: var(--gold) !important;
+  border-color: var(--gold-d) !important;
+  color: #fff !important;
+  font-weight: 600 !important;
+  letter-spacing: 0.02em !important;
+  transition: background 0.2s, transform 0.15s !important;
+}
+
+.btn:hover {
+  background-color: var(--gold-d) !important;
+  transform: translateY(-1px) !important;
+}
+
+/* ── RESPONSIVE ── */
+@media (max-width: 680px) {
+  .page-header { padding: 2rem 1.25rem !important; }
+  .main-content { font-size: 1rem; }
+  .main-content h1 { font-size: 1.6rem; }
+}

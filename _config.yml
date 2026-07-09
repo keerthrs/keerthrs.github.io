@@ -1,0 +1,24 @@
+title: Keerthivaasan Ramamoorthy Sathyaseelan | Engineering Portfolio
+description: "Product Development · Test & Validation · Supplier Quality · Manufacturing Engineering"
+
+theme: jekyll-theme-cayman
+
+permalink: pretty
+
+author:
+  name: Keerthivaasan Ramamoorthy Sathyaseelan
+  email: keerthivaasansathyaseelan@gmail.com
+  linkedin: https://linkedin.com/in/keerthrs
+  location: Madison, WI
+
+collections:
+  projects:
+    output: true
+    permalink: /projects/:name/
+
+defaults:
+  - scope:
+      path: ""
+      type: "projects"
+    values:
+      layout: page
