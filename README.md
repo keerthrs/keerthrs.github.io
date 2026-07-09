@@ -2,7 +2,7 @@
 
 A portfolio of professional experience, engineering projects, and technical expertise across product development, test and validation, supplier quality, and manufacturing process engineering.
 
-**Live site:** [https://KaSho2.github.io](https://KaSho2.github.io)
+**Live site:** [https://keerthrs.github.io/](https://keerthrs.github.io/)
 
 ---
 
